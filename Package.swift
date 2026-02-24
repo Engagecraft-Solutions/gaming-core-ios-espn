@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "GamesLib",
+    name: "gaming-core-ios-espn",
     defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
