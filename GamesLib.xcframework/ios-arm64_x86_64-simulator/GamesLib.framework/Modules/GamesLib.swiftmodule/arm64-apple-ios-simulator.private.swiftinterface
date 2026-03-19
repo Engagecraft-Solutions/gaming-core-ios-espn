@@ -993,6 +993,9 @@ open class CodableCallManager<Payload> : Foundation.ObservableObject where Paylo
   #if compiler(>=5.3) && $NonescapableTypes
   public static func competition(for gameId: Swift.String) -> Swift.Int?
   #endif
+  public var competitionThemeBundleName: Swift.String {
+    get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif

@@ -21507,6 +21507,47 @@
           },
           {
             "kind": "Var",
+            "name": "competitionThemeBundleName",
+            "printedName": "competitionThemeBundleName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8GamesLib21GamingHubCompetitionsO26competitionThemeBundleNameSSvp",
+            "mangledName": "$s8GamesLib21GamingHubCompetitionsO26competitionThemeBundleNameSSvp",
+            "moduleName": "GamesLib",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8GamesLib21GamingHubCompetitionsO26competitionThemeBundleNameSSvg",
+                "mangledName": "$s8GamesLib21GamingHubCompetitionsO26competitionThemeBundleNameSSvg",
+                "moduleName": "GamesLib",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
             "children": [
@@ -50120,10 +50161,129 @@
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
-      "kind": "Dictionary",
-      "offset": 3389,
-      "length": 2880,
-      "value": "[]"
+      "kind": "StringLiteral",
+      "offset": 3932,
+      "length": 21,
+      "value": "\"PlayoffProSans-Bold\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3963,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3995,
+      "length": 21,
+      "value": "\"PlayoffProSans-Bold\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4049,
+      "length": 27,
+      "value": "\"PlayoffProSans-BoldItalic\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4086,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4118,
+      "length": 27,
+      "value": "\"PlayoffProSans-BoldItalic\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4178,
+      "length": 24,
+      "value": "\"PlayoffProSans-Regular\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4212,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4247,
+      "length": 24,
+      "value": "\"PlayoffProSans-Regular\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4304,
+      "length": 30,
+      "value": "\"PlayoffProSans-RegularItalic\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4344,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4379,
+      "length": 30,
+      "value": "\"PlayoffProSans-RegularItalic\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4442,
+      "length": 23,
+      "value": "\"PlayoffProSans-Medium\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4475,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4510,
+      "length": 23,
+      "value": "\"PlayoffProSans-Medium\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4566,
+      "length": 29,
+      "value": "\"PlayoffProSans-MediumItalic\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4605,
+      "length": 5,
+      "value": "\"otf\""
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CompetitionFonts\/GamingHubCardsFontsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4640,
+      "length": 29,
+      "value": "\"PlayoffProSans-MediumItalic\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/GamingDevelopment\/GHPOCViewController.swift",
@@ -50828,7 +50988,7 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/extensions\/GamingHubCards\/GamingHubCardsBundle.swift",
       "kind": "BooleanLiteral",
-      "offset": 5143,
+      "offset": 5130,
       "length": 5,
       "value": "false"
     },
@@ -51178,63 +51338,63 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2185,
+      "offset": 2253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3979,
+      "offset": 4047,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4069,
+      "offset": 4137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7076,
+      "offset": 7144,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7166,
+      "offset": 7234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10043,
+      "offset": 10111,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10133,
+      "offset": 10201,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "Array",
-      "offset": 13724,
+      "offset": 13792,
       "length": 36,
       "value": "[\"en\", \"es\", \"fr\", \"de\", \"it\", \"pt\", \"ru\"]"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 13834,
+      "offset": 13902,
       "length": 4,
       "value": "\"en\""
     },
@@ -51339,7 +51499,7 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/CompetitionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5347,
+      "offset": 5414,
       "length": 2,
       "value": "72"
     },

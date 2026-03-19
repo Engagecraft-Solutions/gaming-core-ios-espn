@@ -6,7 +6,8 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "GamesLib", targets: ["CoreTarget"])
+        .library(name: "GamesLib", targets: ["CoreTarget"]),//GHMainTheme
+        .library(name: "GHMainTheme", targets: ["GHMainTheme"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire", exact: "5.9.1"),
@@ -26,7 +27,14 @@ let package = Package(
         .binaryTarget(
             name: "CoreBinary", 
             path: "GamesLib.xcframework"
-        )
+        ),
+        .target(
+             name: "GHMainTheme",
+             path: "Sources/MainThemeFull",
+             resources: [
+                 .process("Assets")
+             ]
+         ),
     ],
     swiftLanguageVersions: [.v5]
 )
