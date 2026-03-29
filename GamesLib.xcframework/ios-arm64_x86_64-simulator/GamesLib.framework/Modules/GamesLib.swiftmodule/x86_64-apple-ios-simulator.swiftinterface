@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name GamesLib -package-name gameslib
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name GamesLib -package-name gameslib
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Alamofire
 import Combine
@@ -45,12 +45,55 @@ extension GamesLib.AdSize {
 public struct AdSize {
 }
 public let AdSizeBanner: GamesLib.AdSize
+public protocol GHAuthenticatorProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var user: GamesLib.GHAuthenticatedUser? { get }
+  #endif
+  func authenticate() async throws -> any GamesLib.GHAuthenticatedUserProtocol
+  func logout() async throws
+  func isAuthenticated() async -> Swift.Bool
+  func setup() async
+}
+public protocol GHAuthenticatedUserProtocol {
+  var authToken: Swift.String { get }
+  var userToken: Swift.String { get }
+}
+public struct GHAuthenticatedUser : GamesLib.GHAuthenticatedUserProtocol {
+  public var authToken: Swift.String
+  public var userToken: Swift.String
+  public init(authToken: Swift.String, userToken: Swift.String)
+}
+@_Concurrency.MainActor @preconcurrency public struct ArticleView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(articleId: Swift.String, isTag: Swift.Bool = false)
+  public typealias Body = @_opaqueReturnTypeOf("$s8GamesLib11ArticleViewV4bodyQrvp", 0) __
+}
+
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func fontLineHeight(_ lineHeight: CoreFoundation.CGFloat, font: UIKit.UIFont) -> some SwiftUICore.View
+  
+}
 extension GamesLib.GamingHubCards {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func registerFonts(forCompetition id: Swift.Int, weight: UIKit.UIFont.Weight? = nil)
   #endif
   public static func font(competition: Swift.Int, size: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight = .regular) -> UIKit.UIFont
   public static func font(competition: GamesLib.GamingHubCompetitions, size: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight = .regular) -> UIKit.UIFont
+}
+public class GHProfileEditManager : GamesLib.GHProfileEditProtocol {
+  public static let shared: GamesLib.GHProfileEditManager
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setUsername(_ username: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public protocol GHProfileEditProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setUsername(_ username: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
 }
 public var CurrentGame: Swift.String
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class GHPOCViewController : UIKit.UIViewController {
@@ -61,6 +104,7 @@ public var CurrentGame: Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func setup(gameId: Swift.String, data: [Swift.String : Any]? = nil)
   #endif
+  @objc @_Concurrency.MainActor @preconcurrency open func onLoginLoginRequest(notification: Foundation.Notification)
   @objc @_Concurrency.MainActor @preconcurrency open func onOpenGame(notification: Foundation.Notification)
   @objc @_Concurrency.MainActor @preconcurrency open func openMenu(notification: Foundation.Notification)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -531,6 +575,9 @@ extension GamesLib.GamingHubCards {
   #if compiler(>=5.3) && $NonescapableTypes
   public class func openLink(_ url: Swift.String, gameId: Swift.String? = nil, extraInfo: [Swift.String : Any]? = nil)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func openDeepLink(_ url: Swift.String, gameId: Swift.String? = nil, extraInfo: [Swift.String : Any]? = nil)
+  #endif
   public class func showTabBar(_ show: Swift.Bool)
   public class func setLocale(_ locale: Swift.String)
   @discardableResult
@@ -589,6 +636,7 @@ extension Foundation.NSNotification.Name {
   public static let ghOpenIdpProfileScreen: Foundation.Notification.Name
   public static let ghShowTabBar: Foundation.Notification.Name
   public static let ghOpenLink: Foundation.Notification.Name
+  public static let ghOpenGameLink: Foundation.Notification.Name
   public static let ghEnableGameNotifications: Foundation.Notification.Name
   public static let ghTrackScreen: Foundation.Notification.Name
   public static let ghTrackEvent: Foundation.Notification.Name
@@ -1103,6 +1151,9 @@ public enum GamingHubEnvironment : Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func share(_ stickerLink: Swift.String?, backgroundLink: Swift.String?, backgroundTopColor: Swift.String?, backgroundBottomColor: Swift.String?, contentUrl: Swift.String?, completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
   #endif
+  public static var hasFacebookId: Swift.Bool {
+    get
+  }
   @objc deinit
 }
 public let GHFCMTOKEN: Swift.String
@@ -1329,6 +1380,7 @@ open class APICallAManger<T> where T : Swift.Decodable {
   public static func isAvailable(gameId: Swift.String, resource: GamesLib.GamingHubResourceAvailability) -> Swift.Bool
   public static var cardsAnalytics: (any GamesLib.GHCardsTrackingProtocol)?
   public static func activate(gameId: Swift.String, active: Swift.Bool)
+  public static var deeplinkPublisher: Combine.PassthroughSubject<Swift.String, Swift.Never>
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1811,6 +1863,7 @@ public protocol TrackingLocationInfoProtocol : AnyObject {
 }
 extension GamesLib.GHBannerView : Swift.Sendable {}
 extension GamesLib.GHAdBannerWithFallBack : Swift.Sendable {}
+extension GamesLib.ArticleView : Swift.Sendable {}
 extension GamesLib.GHPOCSwiftUIHomeFeed : Swift.Sendable {}
 extension GamesLib.GamingRailCardView : Swift.Sendable {}
 extension GamesLib.GHViewImpressionVisibility : Swift.Sendable {}

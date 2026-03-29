@@ -384,6 +384,7 @@ SWIFT_PROTOCOL("_TtP8GamesLib23GHCardsTrackingProtocol_")
 SWIFT_CLASS("_TtC8GamesLib19GHPOCViewController")
 @interface GHPOCViewController : UIViewController
 - (void)viewDidLoad;
+- (void)onLoginLoginRequestWithNotification:(NSNotification * _Nonnull)notification;
 - (void)onOpenGameWithNotification:(NSNotification * _Nonnull)notification;
 - (void)openMenuWithNotification:(NSNotification * _Nonnull)notification;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
