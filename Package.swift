@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "gaming-core-ios-espn",
     defaultLocalization: "en",
-    platforms: [.iOS(.v15)],
+    platforms: [.iOS(.v17)],
     products: [
         .library(name: "GamesLib", targets: ["CoreTarget"]),//GHMainTheme
         .library(name: "GHMainTheme", targets: ["GHMainTheme"])
