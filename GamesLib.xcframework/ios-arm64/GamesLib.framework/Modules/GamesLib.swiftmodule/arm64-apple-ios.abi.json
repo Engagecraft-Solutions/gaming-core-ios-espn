@@ -38898,6 +38898,13 @@
         "moduleName": "GamesLib"
       },
       {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "GamesLib"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NotificationsPrefsManager",
         "printedName": "NotificationsPrefsManager",
@@ -39705,6 +39712,20 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "GamesLib"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "GamesLib"
       },
       {
         "kind": "Import",
@@ -54177,14 +54198,14 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Helpers\/Notifications\/NotificationsPrefsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8197,
+      "offset": 8218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Helpers\/Notifications\/NotificationsPrefsManager.swift",
       "kind": "StringLiteral",
-      "offset": 10346,
+      "offset": 10388,
       "length": 28,
       "value": "\"ghnotificationprefspushed2\""
     },
