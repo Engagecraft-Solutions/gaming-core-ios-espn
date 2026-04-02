@@ -1442,7 +1442,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(articleId:isTag:)",
+            "printedName": "init(articleId:isTag:textColor:backgroundColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1462,11 +1462,25 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI5ColorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI5ColorV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8GamesLib11ArticleViewV9articleId5isTagACSS_Sbtcfc",
-            "mangledName": "$s8GamesLib11ArticleViewV9articleId5isTagACSS_Sbtcfc",
+            "usr": "s:8GamesLib11ArticleViewV9articleId5isTag9textColor010backgroundJ0ACSS_Sb7SwiftUI0J0VAJtcfc",
+            "mangledName": "$s8GamesLib11ArticleViewV9articleId5isTag9textColor010backgroundJ0ACSS_Sb7SwiftUI0J0VAJtcfc",
             "moduleName": "GamesLib",
             "declAttributes": [
               "Preconcurrency",
@@ -51692,7 +51706,7 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CMS\/Core\/ArticleView.swift",
       "kind": "BooleanLiteral",
-      "offset": 345,
+      "offset": 555,
       "length": 5,
       "value": "false"
     },
@@ -51804,14 +51818,14 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CMS\/SimpleJSON\/JsonPostBodyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2350,
+      "offset": 2476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CMS\/SimpleJSON\/JsonPostBodyView.swift",
       "kind": "StringLiteral",
-      "offset": 2508,
+      "offset": 2776,
       "length": 6,
       "value": "\"help\""
     },
