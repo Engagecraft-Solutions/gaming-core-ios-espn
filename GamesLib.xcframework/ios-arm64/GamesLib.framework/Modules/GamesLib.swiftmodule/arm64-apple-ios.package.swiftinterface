@@ -347,6 +347,12 @@ extension GamesLib.GamingEditorialCarousel {
   @objc static func viewController(data: [Swift.String : Any], gameId: Swift.String, competition: Swift.Int) -> UIKit.UIViewController?
   #endif
 }
+public protocol CompetitionGameCardView {
+  associatedtype GameScreen : SwiftUICore.View
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func gameSwiftUI(data: [Swift.String : Any]?, gameId: Swift.String?, competition: Swift.Int?) -> Self.GameScreen
+  #endif
+}
 extension Foundation.Bundle {
   public class func ghBundle(for component: Swift.AnyClass, name: Swift.String) -> Foundation.Bundle
 }
@@ -484,6 +490,11 @@ extension GamesLib.GamingHubCards {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public class func game(gameId: Swift.String, data: [Swift.String : Any]? = nil, ignoreGamingAvailability: Swift.Bool = false) -> UIKit.UIViewController?
+  #endif
+}
+extension GamesLib.GamingHubCards {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func gameSwiftUI(gameId: Swift.String, data: [Swift.String : Any]? = nil, ignoreGamingAvailability: Swift.Bool = false) -> SwiftUICore.AnyView
   #endif
 }
 extension GamesLib.GamingHubCards {

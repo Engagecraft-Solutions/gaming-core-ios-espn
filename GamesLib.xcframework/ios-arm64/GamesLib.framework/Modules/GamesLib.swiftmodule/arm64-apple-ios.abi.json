@@ -9882,6 +9882,132 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GamesLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CompetitionGameCardView",
+        "printedName": "CompetitionGameCardView",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "GameScreen",
+            "printedName": "GameScreen",
+            "declKind": "AssociatedType",
+            "usr": "s:8GamesLib23CompetitionGameCardViewP0D6ScreenQa",
+            "mangledName": "$s8GamesLib23CompetitionGameCardViewP0D6ScreenQa",
+            "moduleName": "GamesLib",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "gameSwiftUI",
+            "printedName": "gameSwiftUI(data:gameId:competition:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.GameScreen"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8GamesLib23CompetitionGameCardViewP11gameSwiftUI4data0G2Id11competition0D6ScreenQzSDySSypGSg_SSSgSiSgtFZ",
+            "mangledName": "$s8GamesLib23CompetitionGameCardViewP11gameSwiftUI4data0G2Id11competition0D6ScreenQzSDySSypGSg_SSSgSiSgtFZ",
+            "moduleName": "GamesLib",
+            "genericSig": "<τ_0_0 where τ_0_0 : GamesLib.CompetitionGameCardView>",
+            "sugared_genericSig": "<Self where Self : GamesLib.CompetitionGameCardView>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8GamesLib23CompetitionGameCardViewP",
+        "mangledName": "$s8GamesLib23CompetitionGameCardViewP",
+        "moduleName": "GamesLib",
+        "genericSig": "<τ_0_0.GameScreen : SwiftUI.View>",
+        "sugared_genericSig": "<Self.GameScreen : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12117,6 +12243,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GamesLib"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "GamesLib"
       },
@@ -31247,6 +31380,67 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gameSwiftUI",
+            "printedName": "gameSwiftUI(gameId:data:ignoreGamingAvailability:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8GamesLib14GamingHubCardsC11gameSwiftUI0F2Id4data06ignoreC12Availability0gH07AnyViewVSS_SDySSypGSgSbtFZ",
+            "mangledName": "$s8GamesLib14GamingHubCardsC11gameSwiftUI0F2Id4data06ignoreC12Availability0gH07AnyViewVSS_SDySSypGSgSbtFZ",
+            "moduleName": "GamesLib",
+            "static": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -52778,6 +52972,13 @@
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/extensions\/GamingHubCards\/GamingHubCardsBundle.swift",
       "kind": "BooleanLiteral",
       "offset": 5130,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/extensions\/GamingHubCards\/GamingHubCardsBundle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7174,
       "length": 5,
       "value": "false"
     },
