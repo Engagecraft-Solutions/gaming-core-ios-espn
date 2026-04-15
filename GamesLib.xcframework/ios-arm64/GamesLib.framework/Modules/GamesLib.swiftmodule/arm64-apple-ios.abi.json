@@ -25128,7 +25128,10 @@
             "declKind": "EnumElement",
             "usr": "s:8GamesLib20GamingHubEnvironmentO13preproductionyA2CmF",
             "mangledName": "$s8GamesLib20GamingHubEnvironmentO13preproductionyA2CmF",
-            "moduleName": "GamesLib"
+            "moduleName": "GamesLib",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -25165,7 +25168,10 @@
             "declKind": "EnumElement",
             "usr": "s:8GamesLib20GamingHubEnvironmentO10productionyA2CmF",
             "mangledName": "$s8GamesLib20GamingHubEnvironmentO10productionyA2CmF",
-            "moduleName": "GamesLib"
+            "moduleName": "GamesLib",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -25184,7 +25190,8 @@
             "mangledName": "$s8GamesLib20GamingHubEnvironmentO13backendPrefixSSvp",
             "moduleName": "GamesLib",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -52838,44 +52845,9 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
       "kind": "StringLiteral",
-      "offset": 3050,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
-      "kind": "StringLiteral",
-      "offset": 3069,
+      "offset": 3053,
       "length": 4,
-      "value": "\"14\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
-      "kind": "StringLiteral",
-      "offset": 3090,
-      "length": 6,
-      "value": "\"2019\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
-      "kind": "StringLiteral",
-      "offset": 3113,
-      "length": 4,
-      "value": "\"28\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
-      "kind": "StringLiteral",
-      "offset": 3138,
-      "length": 3,
-      "value": "\"3\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightArticleTeaser.swift",
-      "kind": "StringLiteral",
-      "offset": 3159,
-      "length": 4,
-      "value": "\"18\""
+      "value": "\"72\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/GamingEditorial\/LightEditorial\/LightEditorialDataManager.swift",
@@ -53195,7 +53167,7 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Theming\/ThemeColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4844,
+      "offset": 4853,
       "length": 1,
       "value": "1"
     },
@@ -53496,7 +53468,7 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/CompetitionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 5259,
       "length": 2,
       "value": "72"
     },
@@ -53646,27 +53618,6 @@
       "offset": 215,
       "length": 4,
       "value": "\"qa\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/GamingHubConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 240,
-      "length": 13,
-      "value": "\"integration\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/GamingHubConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 276,
-      "length": 5,
-      "value": "\"pre\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/GamingHubConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 301,
-      "length": 6,
-      "value": "\"prod\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/Communication\/LoginManager.swift",
@@ -54056,35 +54007,35 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/GamingHubCards.swift",
       "kind": "StringLiteral",
-      "offset": 2478,
+      "offset": 2480,
       "length": 6,
       "value": "\"prod\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/GamingHubCards.swift",
       "kind": "IntegerLiteral",
-      "offset": 2652,
+      "offset": 2654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/GamingHubCards.swift",
       "kind": "StringLiteral",
-      "offset": 9714,
+      "offset": 9716,
       "length": 6,
       "value": "\"game\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/GamingHubCards.swift",
       "kind": "StringLiteral",
-      "offset": 9742,
+      "offset": 9744,
       "length": 10,
       "value": "\"featured\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/bridge\/ios\/GamingHubModule\/GamingHubCards.swift",
       "kind": "StringLiteral",
-      "offset": 9771,
+      "offset": 9773,
       "length": 12,
       "value": "\"match_card\""
     },
