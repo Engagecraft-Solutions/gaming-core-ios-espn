@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name GamesLib -package-name gameslib
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Alamofire
-import Auth0
 import Combine
 import DeveloperToolsSupport
 import Foundation
@@ -46,33 +45,6 @@ extension GamesLib.AdSize {
 public struct AdSize {
 }
 public let AdSizeBanner: GamesLib.AdSize
-@_Concurrency.MainActor public class GHIDPManager {
-  @_Concurrency.MainActor public static let auth0: GamesLib.GHIDPManager
-  @_Concurrency.MainActor public init(authentication type: GamesLib.GHIDPAuthenticator = .auth0, authenticator: any GamesLib.GHAuthenticatorProtocol)
-  @_Concurrency.MainActor public func login() async throws
-  @_Concurrency.MainActor public func logout() async throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor public func login(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor public func logout(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  @objc deinit
-}
-public enum GHIDPAuthenticator : Swift.String {
-  case auth0
-  case disney
-  case ping
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension GamesLib.GHIDPManager : nonisolated Observation.Observable {
-}
 public protocol GHAuthenticatorProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   var user: GamesLib.GHAuthenticatedUser? { get }
@@ -1907,10 +1879,6 @@ public protocol TrackingLocationInfoProtocol : AnyObject {
 }
 extension GamesLib.GHBannerView : Swift.Sendable {}
 extension GamesLib.GHAdBannerWithFallBack : Swift.Sendable {}
-extension GamesLib.GHIDPManager : Swift.Sendable {}
-extension GamesLib.GHIDPAuthenticator : Swift.Equatable {}
-extension GamesLib.GHIDPAuthenticator : Swift.Hashable {}
-extension GamesLib.GHIDPAuthenticator : Swift.RawRepresentable {}
 extension GamesLib.ArticleView : Swift.Sendable {}
 extension GamesLib.GHPOCSwiftUIHomeFeed : Swift.Sendable {}
 extension GamesLib.GamingRailCardView : Swift.Sendable {}
