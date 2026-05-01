@@ -1605,590 +1605,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "GamesLib",
-        "printedName": "GamesLib",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "GamesLib",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "GamesLib",
-        "printedName": "GamesLib",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GHIDPManager",
-        "printedName": "GHIDPManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "auth0",
-            "printedName": "auth0",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GHIDPManager",
-                "printedName": "GamesLib.GHIDPManager",
-                "usr": "s:8GamesLib12GHIDPManagerC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8GamesLib12GHIDPManagerC5auth0ACvpZ",
-            "mangledName": "$s8GamesLib12GHIDPManagerC5auth0ACvpZ",
-            "moduleName": "GamesLib",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "Custom",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GHIDPManager",
-                    "printedName": "GamesLib.GHIDPManager",
-                    "usr": "s:8GamesLib12GHIDPManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8GamesLib12GHIDPManagerC5auth0ACvgZ",
-                "mangledName": "$s8GamesLib12GHIDPManagerC5auth0ACvgZ",
-                "moduleName": "GamesLib",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(authentication:authenticator:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GHIDPManager",
-                "printedName": "GamesLib.GHIDPManager",
-                "usr": "s:8GamesLib12GHIDPManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GHIDPAuthenticator",
-                "printedName": "GamesLib.GHIDPAuthenticator",
-                "hasDefaultArg": true,
-                "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GHAuthenticatorProtocol",
-                "printedName": "any GamesLib.GHAuthenticatorProtocol",
-                "usr": "s:8GamesLib23GHAuthenticatorProtocolP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8GamesLib12GHIDPManagerC14authentication13authenticatorAcA18GHIDPAuthenticatorO_AA23GHAuthenticatorProtocol_ptcfc",
-            "mangledName": "$s8GamesLib12GHIDPManagerC14authentication13authenticatorAcA18GHIDPAuthenticatorO_AA23GHAuthenticatorProtocol_ptcfc",
-            "moduleName": "GamesLib",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "login",
-            "printedName": "login()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib12GHIDPManagerC5loginyyYaKF",
-            "mangledName": "$s8GamesLib12GHIDPManagerC5loginyyYaKF",
-            "moduleName": "GamesLib",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logout",
-            "printedName": "logout()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib12GHIDPManagerC6logoutyyYaKF",
-            "mangledName": "$s8GamesLib12GHIDPManagerC6logoutyyYaKF",
-            "moduleName": "GamesLib",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "login",
-            "printedName": "login(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(((any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "((any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Error)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "any Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib12GHIDPManagerC5login10completionyys5Error_pSgcSg_tF",
-            "mangledName": "$s8GamesLib12GHIDPManagerC5login10completionyys5Error_pSgcSg_tF",
-            "moduleName": "GamesLib",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logout",
-            "printedName": "logout(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(((any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "((any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Error)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "any Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib12GHIDPManagerC6logout10completionyys5Error_pSgcSg_tF",
-            "mangledName": "$s8GamesLib12GHIDPManagerC6logout10completionyys5Error_pSgcSg_tF",
-            "moduleName": "GamesLib",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:8GamesLib12GHIDPManagerC",
-        "mangledName": "$s8GamesLib12GHIDPManagerC",
-        "moduleName": "GamesLib",
-        "declAttributes": [
-          "AccessControl",
-          "Custom",
-          "Custom"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Observable",
-            "printedName": "Observable",
-            "usr": "s:11Observation10ObservableP",
-            "mangledName": "$s11Observation10ObservableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GHIDPAuthenticator",
-        "printedName": "GHIDPAuthenticator",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "auth0",
-            "printedName": "auth0",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GamesLib.GHIDPAuthenticator.Type) -> GamesLib.GHIDPAuthenticator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GHIDPAuthenticator",
-                    "printedName": "GamesLib.GHIDPAuthenticator",
-                    "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GamesLib.GHIDPAuthenticator.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GHIDPAuthenticator",
-                        "printedName": "GamesLib.GHIDPAuthenticator",
-                        "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8GamesLib18GHIDPAuthenticatorO5auth0yA2CmF",
-            "mangledName": "$s8GamesLib18GHIDPAuthenticatorO5auth0yA2CmF",
-            "moduleName": "GamesLib"
-          },
-          {
-            "kind": "Var",
-            "name": "disney",
-            "printedName": "disney",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GamesLib.GHIDPAuthenticator.Type) -> GamesLib.GHIDPAuthenticator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GHIDPAuthenticator",
-                    "printedName": "GamesLib.GHIDPAuthenticator",
-                    "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GamesLib.GHIDPAuthenticator.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GHIDPAuthenticator",
-                        "printedName": "GamesLib.GHIDPAuthenticator",
-                        "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8GamesLib18GHIDPAuthenticatorO6disneyyA2CmF",
-            "mangledName": "$s8GamesLib18GHIDPAuthenticatorO6disneyyA2CmF",
-            "moduleName": "GamesLib"
-          },
-          {
-            "kind": "Var",
-            "name": "ping",
-            "printedName": "ping",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(GamesLib.GHIDPAuthenticator.Type) -> GamesLib.GHIDPAuthenticator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GHIDPAuthenticator",
-                    "printedName": "GamesLib.GHIDPAuthenticator",
-                    "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "GamesLib.GHIDPAuthenticator.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GHIDPAuthenticator",
-                        "printedName": "GamesLib.GHIDPAuthenticator",
-                        "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8GamesLib18GHIDPAuthenticatorO4pingyA2CmF",
-            "mangledName": "$s8GamesLib18GHIDPAuthenticatorO4pingyA2CmF",
-            "moduleName": "GamesLib"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "GamesLib.GHIDPAuthenticator?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GHIDPAuthenticator",
-                    "printedName": "GamesLib.GHIDPAuthenticator",
-                    "usr": "s:8GamesLib18GHIDPAuthenticatorO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8GamesLib18GHIDPAuthenticatorO8rawValueACSgSS_tcfc",
-            "mangledName": "$s8GamesLib18GHIDPAuthenticatorO8rawValueACSgSS_tcfc",
-            "moduleName": "GamesLib",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8GamesLib18GHIDPAuthenticatorO8rawValueSSvp",
-            "mangledName": "$s8GamesLib18GHIDPAuthenticatorO8rawValueSSvp",
-            "moduleName": "GamesLib",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8GamesLib18GHIDPAuthenticatorO8rawValueSSvg",
-                "mangledName": "$s8GamesLib18GHIDPAuthenticatorO8rawValueSSvg",
-                "moduleName": "GamesLib",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:8GamesLib18GHIDPAuthenticatorO",
-        "mangledName": "$s8GamesLib18GHIDPAuthenticatorO",
-        "moduleName": "GamesLib",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "GHAuthenticatorProtocol",
         "printedName": "GHAuthenticatorProtocol",
@@ -13372,41 +12788,6 @@
         "moduleName": "GamesLib"
       },
       {
-        "kind": "Import",
-        "name": "TealiumCore",
-        "printedName": "TealiumCore",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "TealiumCollect",
-        "printedName": "TealiumCollect",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "TealiumLifecycle",
-        "printedName": "TealiumLifecycle",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "TealiumTagManagement",
-        "printedName": "TealiumTagManagement",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
-        "kind": "Import",
-        "name": "TealiumAttribution",
-        "printedName": "TealiumAttribution",
-        "declKind": "Import",
-        "moduleName": "GamesLib"
-      },
-      {
         "kind": "TypeDecl",
         "name": "TealiumTracker",
         "printedName": "TealiumTracker",
@@ -13553,8 +12934,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -13732,6 +13112,62 @@
           },
           {
             "kind": "Function",
+            "name": "trackClick",
+            "printedName": "trackClick(action:screen:name:category:label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8GamesLib14TealiumTrackerC10trackClick6action6screen4name8category5labelySS_S4StFZ",
+            "mangledName": "$s8GamesLib14TealiumTrackerC10trackClick6action6screen4name8category5labelySS_S4StFZ",
+            "moduleName": "GamesLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "trackProductImpression",
             "printedName": "trackProductImpression(id:name:category:variant:list:brand:index:category2:category3:category4:category5:domain:gameId:)",
             "children": [
@@ -13888,8 +13324,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14057,6 +13492,66 @@
           },
           {
             "kind": "Function",
+            "name": "track",
+            "printedName": "track(page:subType:type:section3:section2:section1:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8GamesLib14TealiumTrackerC5track4page7subType4type8section38section28section1ySS_S5StFZ",
+            "mangledName": "$s8GamesLib14TealiumTrackerC5track4page7subType4type8section38section28section1ySS_S5StFZ",
+            "moduleName": "GamesLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initilizeUserProperties",
             "printedName": "initilizeUserProperties()",
             "children": [
@@ -14152,8 +13647,29 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDefaultParameters",
+            "printedName": "setDefaultParameters()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8GamesLib14TealiumTrackerC20setDefaultParametersyyFZ",
+            "mangledName": "$s8GamesLib14TealiumTrackerC20setDefaultParametersyyFZ",
+            "moduleName": "GamesLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14256,8 +13772,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14363,29 +13878,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDefaultEventParameters",
-            "printedName": "setDefaultEventParameters()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib14TealiumTrackerC25setDefaultEventParametersyyFZ",
-            "mangledName": "$s8GamesLib14TealiumTrackerC25setDefaultEventParametersyyFZ",
-            "moduleName": "GamesLib",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -14436,70 +13928,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "printConsentStatus",
-            "printedName": "printConsentStatus()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib13TealiumHelperC18printConsentStatusyyF",
-            "mangledName": "$s8GamesLib13TealiumHelperC18printConsentStatusyyF",
-            "moduleName": "GamesLib",
-            "declAttributes": [
               "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateConsentPreferences",
-            "printedName": "updateConsentPreferences(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8GamesLib13TealiumHelperC24updateConsentPreferencesyySDySSypGFZ",
-            "mangledName": "$s8GamesLib13TealiumHelperC24updateConsentPreferencesyySDySSypGFZ",
-            "moduleName": "GamesLib",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -54753,13 +54182,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Authentication\/Auth0\/GHAuthenticatorAuth0.swift",
-      "kind": "BooleanLiteral",
-      "offset": 570,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/CMS\/Core\/ArticleView.swift",
       "kind": "BooleanLiteral",
       "offset": 555,
@@ -55833,44 +55255,37 @@
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
       "kind": "StringLiteral",
-      "offset": 16667,
-      "length": 17,
-      "value": "\"TEALIUM_ACCOUNT\""
-    },
-    {
-      "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
-      "kind": "StringLiteral",
-      "offset": 16700,
+      "offset": 21539,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
       "kind": "StringLiteral",
-      "offset": 16789,
-      "length": 17,
-      "value": "\"TEALIUM_PROFILE\""
+      "offset": 21598,
+      "length": 7,
+      "value": "\"Click\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
       "kind": "StringLiteral",
-      "offset": 16822,
-      "length": 2,
-      "value": "\"\""
+      "offset": 21623,
+      "length": 11,
+      "value": "\"gaminghub\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
       "kind": "StringLiteral",
-      "offset": 16915,
-      "length": 21,
-      "value": "\"TEALIUM_ENVIRONMENT\""
+      "offset": 23680,
+      "length": 11,
+      "value": "\"gaminghub\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/TealiumTracking\/TealiumTracker.swift",
       "kind": "StringLiteral",
-      "offset": 16952,
-      "length": 2,
-      "value": "\"\""
+      "offset": 23712,
+      "length": 11,
+      "value": "\"gaminghub\""
     },
     {
       "filePath": "\/var\/folders\/5y\/wk5zybnd0xg4j2wnh01dzs_40000gn\/T\/GamesLib\/Sources\/GamesLibCore\/Native\/extensions\/GamingHubCards\/GameLogger.swift",

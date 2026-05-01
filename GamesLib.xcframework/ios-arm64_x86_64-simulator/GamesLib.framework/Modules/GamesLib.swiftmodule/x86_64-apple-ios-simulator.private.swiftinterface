@@ -3,7 +3,6 @@
 // swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name GamesLib -package-name gameslib
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Alamofire
-import Auth0
 import Combine
 import DeveloperToolsSupport
 import Foundation
@@ -14,11 +13,6 @@ import Kingfisher
 import Swift
 import SwiftUI
 import SwiftyJSON
-import TealiumAttribution
-import TealiumCollect
-import TealiumCore
-import TealiumLifecycle
-import TealiumTagManagement
 import UIKit
 import WebKit
 import _Concurrency
@@ -79,33 +73,6 @@ public let AdSizeBanner: GamesLib.AdSize
   }
   @_Concurrency.MainActor @preconcurrency public init()
   public typealias Body = @_opaqueReturnTypeOf("$s8GamesLib11WebAdBannerV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor public class GHIDPManager {
-  @_Concurrency.MainActor public static let auth0: GamesLib.GHIDPManager
-  @_Concurrency.MainActor public init(authentication type: GamesLib.GHIDPAuthenticator = .auth0, authenticator: any GamesLib.GHAuthenticatorProtocol)
-  @_Concurrency.MainActor public func login() async throws
-  @_Concurrency.MainActor public func logout() async throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor public func login(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor public func logout(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  @objc deinit
-}
-public enum GHIDPAuthenticator : Swift.String {
-  case auth0
-  case disney
-  case ping
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension GamesLib.GHIDPManager : nonisolated Observation.Observable {
 }
 public protocol GHAuthenticatorProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -531,12 +498,14 @@ public struct JSONAS {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func trackEvent(name: Swift.String, parameters: [Swift.String : Any]? = nil, domain: Swift.AnyHashable? = nil, gameId: Swift.String? = nil)
   #endif
+  public static func trackClick(action: Swift.String, screen: Swift.String = "", name: Swift.String = GH_ACTION_TRACK_EVENT, category: Swift.String = "Click", label: Swift.String = "gaminghub")
   #if compiler(>=5.3) && $NonescapableTypes
   public static func trackProductImpression(id: Swift.String, name: Swift.String, category: Swift.String, variant: Swift.String?, list: Swift.String, brand: Swift.String, index: Swift.Int, category2: Swift.String? = nil, category3: Swift.String? = nil, category4: Swift.String? = nil, category5: Swift.String? = nil, domain: Swift.AnyHashable? = nil, gameId: Swift.String? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func trackProductClick(id: Swift.String, name: Swift.String, category: Swift.String, variant: Swift.String?, list: Swift.String, brand: Swift.String, index: Swift.Int, category2: Swift.String? = nil, category3: Swift.String? = nil, category4: Swift.String? = nil, category5: Swift.String? = nil, domain: Swift.AnyHashable? = nil, gameId: Swift.String? = nil)
   #endif
+  public static func track(page: Swift.String, subType: Swift.String, type: Swift.String, section3: Swift.String, section2: Swift.String = "gaminghub", section1: Swift.String = "gaminghub")
   public static func initilizeUserProperties()
   #if compiler(>=5.3) && $NonescapableTypes
   public static func setUserProperty(_ value: Swift.String?, forName key: Swift.String)
@@ -544,19 +513,17 @@ public struct JSONAS {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func updatePushNotificationsUserProperty(value: Swift.String? = nil)
   #endif
+  public static func setDefaultParameters()
   #if compiler(>=5.3) && $NonescapableTypes
   public static func trackSponsor(name: Swift.String, creativeName: Swift.String? = nil, slot: Swift.String? = nil, id: Swift.String? = nil, domain: Swift.AnyHashable? = nil, gameId: Swift.String? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func trackSponsorClick(name: Swift.String, creativeName: Swift.String? = nil, slot: Swift.String? = nil, id: Swift.String? = nil, domain: Swift.AnyHashable? = nil, gameId: Swift.String? = nil)
   #endif
-  public static func setDefaultEventParameters()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class TealiumHelper {
   public static func start()
-  public func printConsentStatus()
-  public static func updateConsentPreferences(_ dict: [Swift.String : Any])
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GameLogger {
@@ -1986,10 +1953,6 @@ extension GamesLib.GHAdBannerWithFallBack : Swift.Sendable {}
 extension GamesLib.HTMLWebView : Swift.Sendable {}
 extension GamesLib.HTMLWebView.Coordinator : Swift.Sendable {}
 extension GamesLib.WebAdBanner : Swift.Sendable {}
-extension GamesLib.GHIDPManager : Swift.Sendable {}
-extension GamesLib.GHIDPAuthenticator : Swift.Equatable {}
-extension GamesLib.GHIDPAuthenticator : Swift.Hashable {}
-extension GamesLib.GHIDPAuthenticator : Swift.RawRepresentable {}
 extension GamesLib.ArticleView : Swift.Sendable {}
 extension GamesLib.GHPOCSwiftUIHomeFeed : Swift.Sendable {}
 extension GamesLib.GamingRailCardView : Swift.Sendable {}
